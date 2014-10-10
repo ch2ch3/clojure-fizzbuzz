@@ -7,3 +7,6 @@
 
 (defn is-divisible-by-three? [number]
   (zero? (mod number 3)))
+
+(defn is-divisible-by-five? [number]
+  (zero? (mod number 5)))
