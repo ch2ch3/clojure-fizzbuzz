@@ -1,15 +1,13 @@
 (ns clojure-fizzbuzz.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn is-divisible-by? [number divisor]
+  (zero? (mod number divisor)))
 
 (defn is-divisible-by-three? [number]
-  (zero? (mod number 3)))
+  (is-divisible-by? number 3))
 
 (defn is-divisible-by-five? [number]
-  (zero? (mod number 5)))
+  (is-divisible-by? number 5))
 
 (defn is-divisible-by-fifteen? [number]
-  (zero? (mod number 15)))
+  (is-divisible-by? number 15))
