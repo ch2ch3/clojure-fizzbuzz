@@ -10,3 +10,6 @@
 
 (defn is-divisible-by-five? [number]
   (zero? (mod number 5)))
+
+(defn is-divisible-by-fifteen? [number]
+  (zero? (mod number 15)))
