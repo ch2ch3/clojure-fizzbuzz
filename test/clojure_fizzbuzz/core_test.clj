@@ -25,3 +25,15 @@
 (deftest is-divisible-by-fifteen
   (testing "returns true for 15"
     (is (= false (is-divisible-by-fifteen? 1)))))
+
+(deftest returns-fizz-for-multiples-of-three
+  (testing "returns 'fizz' for a number divisible by 3"
+    (is (= "fizz" (fizzbuzz 3)))))
+
+(deftest returns-buzz-for-multiples-of-five
+  (testing "returns 'buzz' for a number divisible by 5"
+    (is (= "buzz" (fizzbuzz 5)))))
+
+(deftest returns-buzz-for-multiples-of-fifteen
+  (testing "returns 'fizzbuzz' for a number divisible by 15"
+    (is (= "fizzbuzz" (fizzbuzz 15)))))
